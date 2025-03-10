@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto de Seminario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Imagen en la esquina superior izquierda -->
+    <img src="fondo4.jpg" alt="Imagen decorativa" class="fondo-imagen">
+
+    <header>
+        <div class="video-container">
+            <video autoplay muted loop playsinline>
+                <source src="fondo.mp4" type="video/mp4">
+                <source src="fondo.webm" type="video/webm">
+            </video>
+            <video autoplay muted loop playsinline>
+                <source src="fondo2.mp4" type="video/mp4">
+                <source src="fondo2.webm" type="video/webm">
+            </video>
+        </div>
+        <h1>Proyecto de vida</h1>
+        <p>Exploremos un poco de mi vida</p>
+    </header>
+    <div class="button-container">
+        <div class="button-column">
+            <button onclick="showSection('tema1')">tema 1</button>
+            <button onclick="showSection('tema2')">Tema 2</button>
+            <button onclick="showSection('tema3')">Tema 3</button>
+            <button onclick="showSection('tema4')">tema 4</button>
+            <button onclick="showSection('tema5')">Tema 5</button>
+            <button onclick="showSection('tema6')">Tema 6 y 7</button>
+            <button onclick="showSection('tema7')">Tema 8</button>
+        </div>
+        <div class="button-column">
+            <button onclick="showSection('tema8')">Tema 9</button>
+            <button onclick="showSection('tema9')">Tema 10</button>
+            <button onclick="showSection('tema10')">Tema 11</button>
+            <button onclick="showSection('tema11')">Tema 12</button>
+            <button onclick="showSection('tema12')">Tema 13</button>
+            <button onclick="showSection('tema13')">Tema 14</button>
+            <button onclick="showSection('tema14')">Tema 15</button>
+        </div>
+    </div>
+    <button id="boton15" onclick="showSection('tema15')">QR</button> <!-- Botón 15 añadido aquí -->
+    
+    <main>
+        <section id="tema1" class="hidden">
+            <h2>Caratula</h2>
+            Establecimiento: Liceo compu market.<br>
+            Nombre: Luis Alberto.<br>
+            Apellido: Román Garcia.<br>
+            Grado: 5to Baco<br>
+            Sección: "A"<br>
+            Edad: 17<br>
+        </section>
+        <section id="tema2" class="hidden">
+            <h2>Personalidad</h2>
+            <img src="foto9.jpg" alt="Imagen de tema 2" class="tema-imagen">
+        </section>
+        <section id="tema3" class="hidden">
+            <h2>Autoretrato</h2>
+            <img src="foto.jpg" alt="Imagen de tema 3" class="tema-imagen">
+        </section>
+        <section id="tema4" class="hidden">
+            <h2>Acróstico</h2>
+            <img src="foto2.jpg" alt="Imagen de tema 4" class="tema-imagen">
+        </section>
+        <section id="tema5" class="hidden">
+            <h2>Biografía</h2>
+            <img src="foto23.jpg" alt="Imagen de tema 5" class="tema-imagen">
+        </section>
+        <section id="tema6" class="hidden">
+            <h2>Visión y Misión</h2>
+            <img src="foto22.jpg" alt="Imagen de tema 6" class="tema-imagen">
+        </section>
+        <section id="tema7" class="hidden">
+            <h2>Metas</h2>
+            <img src="foto11.jpg" alt="Imagen de tema 7" class="tema-imagen">
+        </section>
+        <section id="tema8" class="hidden">
+            <h2>Aliados</h2>
+            <img src="foto4.jpg" alt="Imagen de tema 8" class="tema-imagen">
+        </section>
+        <section id="tema9" class="hidden">
+            <h2>Valores</h2>
+            <img src="foto10.jpg" alt="Imagen de tema 9" class="tema-imagen">
+        </section>
+        <section id="tema10" class="hidden">
+            <h2>Estrategias</h2>
+            <img src="foto14.jpg" alt="Imagen de tema 10" class="tema-imagen">
+        </section>
+        <section id="tema11" class="hidden">
+            <h2>Foda</h2>
+            <img src="foto15.jpg" alt="Imagen de tema 11" class="tema-imagen">
+        </section>
+        <section id="tema12" class="hidden">
+            <h2>Conclusión</h2>
+            <img src="foto16.jpg" alt="Imagen de tema 12" class="tema-imagen">
+        </section>
+        <section id="tema13" class="hidden">
+            <h2>Agradecimientos</h2>
+            <img src="foto17.jpg" alt="Imagen de tema 13" class="tema-imagen">
+        </section>
+        <section id="tema14" class="hidden">
+            <h2>Metas alcanzadas</h2>
+            <img src="foto18.jpg" alt="Imagen de tema 14" class="tema-imagen">
+        </section>
+        <!-- Sección para el botón 15 -->
+        <section id="tema15" class="hidden">
+            <h2>Qr</h2>
+            <img src="foto21.jpg" alt="Imagen de tema 15" class="tema-imagen">
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Seminario 2025 hecho por Luis Román.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

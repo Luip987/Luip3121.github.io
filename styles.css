@@ -1,0 +1,236 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0a0101;
+    margin: 0;
+    padding: 0;
+    color: rgb(243, 239, 239);
+    position: relative;
+    overflow: hidden;
+}
+
+.fondo-imagen {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 150px;
+    height: auto;
+    z-index: 10;
+    opacity: 0.8;
+}
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    z-index: -1;
+}
+
+.video-container video {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header {
+    color: rgb(243, 183, 183);
+    text-align: center;
+    padding: 80px 20px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 3px 3px 15px rgba(92, 2, 2, 0.9);
+    position: relative;
+    z-index: 2;
+}
+
+.button-container {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 2;
+}
+
+.button-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    background-color: #830303bd;
+    color: rgba(247, 247, 250, 0.904);
+    border: none;
+    padding: 15px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 2rem;
+    box-shadow: 2px 2px 10px rgba(90, 1, 1, 0.781);
+}
+
+button:hover {
+    background-color: #021a33;
+    transform: scale(1.1);
+}
+
+/* Aquí se ajusta la posición y estilo del botón 15 para que tenga el mismo contenido visual que los otros */
+button#boton15 {
+    background-color: #830303bd; /* Color igual al de los otros botones */
+    color: rgba(247, 247, 250, 0.904); /* Color del texto igual al de los otros botones */
+    border: none;
+    padding: 15px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 2rem;
+    box-shadow: 2px 2px 10px rgba(90, 1, 1, 0.781);
+    position: fixed;
+    top: 20px; /* Posición en la parte superior */
+    right: 20px; /* Posición en la parte derecha */
+    z-index: 10000; /* Asegurarse de que esté por encima de otros elementos */
+    width: auto; /* Ajuste para que el contenido se vea adecuado */
+    height: auto;
+    text-align: center;
+}
+
+button#boton15:hover {
+    background-color: #021a33; /* Efecto hover igual al de los demás botones */
+    transform: scale(1.1);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 150px);
+    text-align: center;
+    z-index: 2;
+}
+
+section {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.visible {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+    font-size: 2rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+footer {
+    background: #3b0101;
+    color: rgb(245, 243, 248);
+    text-align: center;
+    padding: 15px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px -3px 10px rgba(255, 255, 255, 0.2);
+    z-index: 1;
+}
+
+#tema3 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#tema5.visible img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transform: translateX(-20px);
+}
+
+#tema6.visible img {
+    width: 1342%;
+    max-width: 870px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+#tema15 img {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#tema2.visible img {
+    width: 1342%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#tema7.visible img {
+    width: 750px !important;
+    max-width: none !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+}
+
+#tema1.visible img,
+#tema2.visible img,
+#tema4.visible img,
+#tema6.visible img,
+#tema7.visible img,
+#tema8.visible img,
+#tema9.visible img,
+#tema10.visible img,
+#tema11.visible img,
+#tema12.visible img,
+#tema13.visible img,
+#tema14.visible img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#tema2.visible p,
+#tema4.visible p,
+#tema5.visible p,
+#tema6.visible p,
+#tema7.visible p,
+#tema8.visible p,
+#tema9.visible p,
+#tema10.visible p,
+#tema11.visible p,
+#tema12.visible p,
+#tema13.visible p,
+#tema14.visible p {
+    display: none;
+}
